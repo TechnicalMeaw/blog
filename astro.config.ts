@@ -15,9 +15,12 @@ export default defineConfig({
   site: SITE.website,
   base: "/",
   i18n: {
-    locales: SUPPORTED_LOCALES,
-    defaultLocale: DEFAULT_LOCALE,
+  locales: SUPPORTED_LOCALES,
+  defaultLocale: DEFAULT_LOCALE,
+  routing: {
+    prefixDefaultLocale: false,
   },
+},
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
