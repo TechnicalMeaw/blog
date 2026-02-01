@@ -27,7 +27,7 @@ export const SOCIALS: Social[] = [
   },
   {
     name: "X",
-    href: "https://x.com/Santanu05852558",
+    href: "https://x.com/SantanuM_",
     linkTitle: (t: Translator) => t("socials.x"),
     icon: IconBrandX,
   },
